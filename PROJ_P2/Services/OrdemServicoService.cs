@@ -3,6 +3,13 @@ using PROJ_P2.Repositories;
 
 namespace PROJ_P2.Services;
 
+public class RegraDeNegocioException : Exception
+{
+    public RegraDeNegocioException(string mensagem) : base(mensagem)
+    {
+    }
+}
+
 /// <summary>
 /// O "cozinheiro": conhece as regras do negócio.
 /// Não sabe nada de HTTP nem de Entity Framework.
